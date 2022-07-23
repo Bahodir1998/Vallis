@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <TextView
+         android:id="@+id/tvNumber"
+         android:layout_width="30dp"
+         style="@style/RvTv"
+         android:text="1"
+         android:gravity="center"
+         android:layout_height="match_parent"
+         android:background="@drawable/shape_width_black"
+         />
+    <TextView
+        android:id="@+id/tvCatergory"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="Kategoriya"
+        />
+    <TextView
+        android:id="@+id/tvsubCatergory"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="SubKategoriya"
+        />
+    <TextView
+        android:id="@+id/tvsumma"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="Summa"
+        />
+
+    <TextView
+        android:id="@+id/tvPaymentType"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="To'lov turi"
+        />
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="Status"
+        />
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="200dp"
+        android:paddingHorizontal="10dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="Sana va vaqt"
+        />
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="200dp"
+        android:paddingHorizontal="10dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_width_black"
+        style="@style/RvTv"
+        android:text="Izoh"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEdit"
+        android:visibility="gone"
+        android:layout_width="70dp"
+        android:layout_margin="6dp"
+        android:layout_height="match_parent"
+        android:text="Tahr."
+        android:textAllCaps="false"
+        android:background="@drawable/shape_width_black" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

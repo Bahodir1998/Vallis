@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.screens.checkout.ui.InputOutlayFragment">
+    <ImageView
+        android:id="@+id/backToHomeAddClient"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="12dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:contentDescription="@string/something"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        android:elevation="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Чиким килиш"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/backToHomeAddClient"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/backToHomeAddClient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/backToHomeAddClient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/autoComplete"
+            android:id="@+id/inputCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:backgroundTint="@color/white"
+            app:boxStrokeColor="@color/black">
+
+            <AutoCompleteTextView
+                android:id="@+id/etCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Категория"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/autoComplete"
+            android:id="@+id/inputSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            app:boxStrokeColor="@color/black">
+            <AutoCompleteTextView
+                android:id="@+id/etSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Суб Категория"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/autoComplete"
+            android:id="@+id/inputPaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            app:boxStrokeColor="@color/black">
+            <AutoCompleteTextView
+                android:id="@+id/etPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Тулов тури"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputLayout"
+            android:id="@+id/inputSumma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            app:boxStrokeColor="@color/black">
+            <EditText
+                android:id="@+id/etSumma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Сумма"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputLayout"
+            android:id="@+id/inputComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            app:boxStrokeColor="@color/black">
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Изох"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/add_back"
+            android:text="@string/qo_shish"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.screens.checkout.viewpager.OutlayFragment">
+
+    <TextView
+        android:id="@+id/tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Jami summa: 14000$"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <HorizontalScrollView
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="30dp"
+                    style="@style/RvTv"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    />
+                <TextView
+                    android:id="@+id/tvCatergory"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="Kategoriya"
+                    />
+                <TextView
+                    android:id="@+id/tvsubCatergory"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="SubKategoriya"
+                    />
+                <TextView
+                    android:id="@+id/tvsumma"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="Summa"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPaymentType"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="To'lov turi"
+                    />
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="Status"
+                    />
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="Sana va vaqt"
+                    />
+                <TextView
+                    android:id="@+id/tvComment"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_width_black"
+                    style="@style/RvTv"
+                    android:text="Izoh"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
